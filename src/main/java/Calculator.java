@@ -14,13 +14,6 @@ public class Calculator {
             return i * j;
         }
 
-        if(operation.equals("divide")) {
-            if(j == 0) {
-                throw new RuntimeException("The second parameter can not be 0!");
-            }
-            return i/j;
-        }
-
         throw new RuntimeException("Unsupported Operation" + operation);
     }
 

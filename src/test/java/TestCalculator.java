@@ -25,13 +25,4 @@ public class TestCalculator {
         assertEquals(6, calculator.calculate("multiply", 2, 3));
     }
 
-    @Test
-    public void divide() {
-        assertEquals(2, calculator.calculate("divide", 6, 3));
-    }
-
-    @Test(expected = RuntimeException.class)
-    public void divideByZero() {
-        calculator.calculate("divide", 6, 0);
-    }
 }
